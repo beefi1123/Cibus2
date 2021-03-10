@@ -1,0 +1,67 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 200px;
+    border: 2px solid;
+    background-color: #24005e;
+    padding: 10px;
+    color: #cecece;
+    margin: 0 12px 12px 0;
+  }
+  h2 {
+    font-size: 1.6em;
+    flex: 1;
+  }
+  :host(.vegetarian-no) {
+    border-color: #f56e00;
+  }
+  :host(.vegetarian-no) > h2 {
+    color: #f56e00;
+  }
+  :host(.vegetarian-yes) {
+    border-color: #00ff00;
+  }
+  :host(.vegetarian-yes) > h2 {
+    color: #00ff00;
+  }
+  .tools {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .favorite {
+    width: 24px;
+    height: 24px;
+    fill: #cecece;
+    cursor: pointer;
+  }
+  .favorite.is-favorite {
+      fill: #37ad79;
+  }
+  .favorite.is-favorite-hovering {
+      fill: #45bf94;
+  }
+  .favorite.is-favorite.is-favorite-hovering {
+      fill: #ec4342;
+  }
+  .delete {
+    display: block;
+    background-color: #bb5400;
+    padding: 4px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: #cecece;
+    cursor: pointer;
+  }
+  .details {
+    display: block;
+    background-color: #009b00;
+    padding: 4px;
+    font-size: .8em;
+    border-radius: 4px;
+    color: #cecece;
+    text-decoration: none;
+    cursor: pointer;
+  }
